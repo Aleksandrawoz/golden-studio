@@ -28,30 +28,6 @@ html {
   border-radius: 50px;
 }
 
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1000px) {
-  .container {
-    max-width: 1000px;
-  }
-}
-
 .container-fluid {
   width: 100%;
   padding-right: 15px;
@@ -68,16 +44,34 @@ html {
   margin-right: -15px;
   margin-left: -15px;
 }
-.card-img-overlay {
- 
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  padding-top: 0;
-  padding-bottom: 0;
-	
-}
+
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
+}
+
+@media (max-width: 767px) {
+  .container {
+   min-width: 576px;
+  }
+  
+    .card-body {
+        padding: 50px;
+  
+    }
+    
+    .OUR_PORTFOLIO .card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; }
+   
+    .OUR_PORTFOLIO
+    {
+     font-size: 10px;   
+    }
+    .box {
+        width: 100vh;
+        padding: 0;
+        margin: 0;
+    }
 }
